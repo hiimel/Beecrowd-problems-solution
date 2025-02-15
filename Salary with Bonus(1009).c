@@ -2,17 +2,16 @@
 
 #include <stdio.h>
 int main() {
-    char sellerName[100];
-    float fixedSalary, totalSales, totalSalary;
 
-    scanf("%s", sellerName);
-    scanf("%f", &fixedSalary);
-    scanf("%f", &totalSales);
+    char NAME;
+    double SALARY, SOLD, TOTAL;
 
-    totalSalary = fixedSalary + (totalSales * 0.15);
+    scanf("%s\n%lf\n%lf", &NAME, &SALARY, &SOLD);
 
-    printf("TOTAL = R$ %.2lf\n", totalSalary);
-
+    TOTAL = SALARY + (SOLD*0.15);
+    printf("TOTAL = R$ %0.2lf\n", TOTAL);
     return 0;
-}
+
+    }
+
 
